@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контактная информация</title>
+  <link href="https://fonts.googleapis.com/css?family=Georgia&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Georgia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background: linear-gradient(90deg, #000000 0%, #dd01ff 100%);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contacts {
+      background: linear-gradient(190deg, #c8acdf 0%, #c8dfff 100%);
+      padding: 25px;
+      border-radius: 10px;
+      color: #210047;
+      text-align: center; /* Центрирование текста */
+    }
+
+    h1 {
+      color: #210047;
+      text-align: center;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center; /* Центрирование иконок */
+      margin-top: 20px; /* Дополнительный отступ сверху */
+    }
+
+    .icons img {
+      width: 40px;
+      margin-inline: 1em;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="contacts">
+      <h1>Контактная информация</h1>
+      <p>Телефон: +7 (705) 630 0046</p>
+      <p>Email: 21bakon@mail.ru</p>
+      <p>Адрес: Город Алматы </p>
+      
+      <div class="icons">
+        <a href="https://api.whatsapp.com/send?phone=77056300046" target="_blank">
+          <img src="whicon.png" alt="WhatsApp">
+        </a>
+        <a href="https://t.me/kgfcbkgfcbkgfcb" onclick="openTelegram()">
+          <img src="tgicon.png"  alt="Telegram">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ваш скрипт и другие внешние ресурсы -->
+  <script>
+    function openTelegram() {
+      window.location.href = "https://t.me/kgfcbkgfcbkgfcb";
+    }
+  </script>
+</body>
+</html>

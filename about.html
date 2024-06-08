@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Надпись на блоке и изображение справа</title>
+  <link href="https://fonts.googleapis.com/css?family=Georgiaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgiaa', Georgia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background: linear-gradient(90deg, #c8acdf 0%, #c8dfff 100%);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      overflow: hidden; /* Clear float */
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень блока */
+      border-radius: 10px; /* Скругление углов блока */
+    }
+
+    .content {
+      width: 60%;
+      float: right;
+      padding: 20px;
+    }
+
+    .image {
+      width: 30%;
+      float: left;
+      text-align: right;
+    }
+
+    .image img {
+      width: 100%;
+      display: block;
+    }
+
+    .block-caption {
+      background-color: #4c5eaf;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="block-caption">Дипломная работа</div>
+      <p>Данная цифровая платформа в виде веб-сайта является проектом моей дипломной работы на тему «Разработка цифровой платформы для рынка недвижимости.</p>
+      <p>По ходу разработки этого сайта удалось создать отзывчивый и стильный сайт для рынка недвижимости, с первычными и вторичными веб-страницами. У которого из которых своя роль и функции</p>
+    </div>
+    <div class="image">
+      <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    </div>
+  </div>
+</body>
+</html>
